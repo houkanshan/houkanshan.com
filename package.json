@@ -1,11 +1,11 @@
 {
-  "name": "overreacted",
+  "name": "houkanshan.com",
   "private": true,
-  "description": "Overreacted",
+  "description": "Hou Mai's website",
   "version": "1.0.0",
-  "author": "Dan Abramov <dan.abramov@me.com>",
+  "author": "Hou Mai<houkanshan@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gaearon/overreacted.io/issues"
+    "url": "https://github.com/houkanshan/houkanshan.com/issues"
   },
   "dependencies": {
     "gatsby": "^2.0.76",
@@ -45,7 +45,7 @@
     "gh-pages": "^1.2.0",
     "prettier": "^1.14.2"
   },
-  "homepage": "https://overreacted.io",
+  "homepage": "https://houkanshan.com",
   "license": "MIT",
   "scripts": {
     "dev": "gatsby develop",

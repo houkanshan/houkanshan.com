@@ -1,11 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: 'Overreacted',
-    author: 'Dan Abramov',
-    description: 'Personal blog by Dan Abramov. I explain with words and code.',
-    siteUrl: 'https://overreacted.io',
+    title: 'hou mai',
+    author: 'HOU Mai',
+    description: 'Personal website of HOU Mai.',
+    siteUrl: 'https://houkanshan.com',
     social: {
-      twitter: '@dan_abramov',
+      twitter: '@houkanshan',
+      instagram: 'houkanshan',
+      douban: 'houkanshan',
     },
   },
   pathPrefix: '/',
@@ -56,7 +58,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `UA-130227707-1`,
+        trackingId: `UA-30636693-1`,
       },
     },
     {
@@ -80,7 +82,7 @@ module.exports = {
               return allMarkdownRemark.edges.map(edge => {
                 const siteUrl = site.siteMetadata.siteUrl;
                 const postText = `
-                <div style="margin-top=55px; font-style: italic;">(This is an article posted to my blog at overreacted.io. You can read it online by <a href="${siteUrl +
+                <div style="margin-top=55px; font-style: italic;">(This is an article posted to my blog at houkanshan.com. You can read it online by <a href="${siteUrl +
                   edge.node.fields.slug}">clicking here</a>.)</div>
               `;
 
@@ -106,19 +108,20 @@ module.exports = {
                 allMarkdownRemark(
                   limit: 1000,
                   sort: { order: DESC, fields: [frontmatter___date] }
-                  filter: {fields: { langKey: {eq: "en"}}}
+                  filter: {fields: { langKey: {eq: "en"}, frontmatter: { isHidden: {ne: true} }}}
                 ) {
                   edges {
                     node {
                       excerpt(pruneLength: 250)
                       html
-                      fields { 
-                        slug   
+                      fields {
+                        slug
                       }
                       frontmatter {
                         title
                         date
-                        spoiler
+                        # spoiler
+                        isHidden
                       }
                     }
                   }
@@ -126,7 +129,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: "Dan Abramov's Overreacted Blog RSS Feed",
+            title: "HOU Mai's Blog RSS Feed",
           },
         ],
       },
@@ -134,11 +137,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Overreacted`,
-        short_name: `Overreacted`,
+        name: `HOU Mai`,
+        short_name: `Hou Mai`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#ffa7c4`,
+        theme_color: `#000000`,
         display: `minimal-ui`,
         icon: `src/assets/icon.png`,
         theme_color_in_head: false,
