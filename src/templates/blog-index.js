@@ -73,7 +73,10 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      filter: { fields: { langKey: { eq: $langKey } } }
+      filter: {
+        fields: { langKey: { eq: $langKey } }
+        frontmatter: { isHidden: { ne: true } }
+      }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
@@ -86,7 +89,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
-            # spoiler
+            spoiler
           }
         }
       }

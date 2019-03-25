@@ -178,10 +178,11 @@ exports.onCreateNode = ({ node, actions }) => {
       maybeAbsoluteLinks.push(match[1]);
       match = linkRe.exec(markdown);
     }
+    console.log(maybeAbsoluteLinks);
     createNodeField({
       node,
       name: 'maybeAbsoluteLinks',
-      value: _.uniq(maybeAbsoluteLinks),
+      value: _.uniq(maybeAbsoluteLinks).concat(['__dummy__']), // the __dummy__ can be removed once we have a inner refer.
     });
   }
 };
