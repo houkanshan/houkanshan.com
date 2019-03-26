@@ -15,4 +15,6 @@ Q&A 的时候有个满头白发的老者好像一开始就举了手，本来想�
 
 <script async class="speakerdeck-embed" data-id="2d574b507b00013276f156408e7781f2" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
+https://speakerdeck.com/houkanshan/web-fonts-at-douban-read
+
 ----
