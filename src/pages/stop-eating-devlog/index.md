@@ -1,6 +1,7 @@
 ---
 title: 'Devlog: Stop Eating'
 date: 2018-09-16
+cover: cover.png
 ---
 
 ## Summary
@@ -50,7 +51,7 @@ So I made some basic verbs to support these mistakes:
 
 These verbs are not enough for distracting since the player’s speed is slower than enemies’. So the enemies should be more stupid in moving: they only target the nearest cake in the straight-line distance. So walls do not only create obstacles but also traps.
 
-![Distract](/img/stop_eating/distract.png)
+![Distract](./distract.png)
 
 The speed-up ability encourage the player to drop items while slowing down the enemies gives the player a chance to make a plan. I found that the enemies’ speed can be just a little bit faster than the player’s because it created a lot “so close” moments.
 

@@ -4,7 +4,6 @@ import { formatPostDate, formatReadingTime } from '../utils/helpers';
 import Bio from '../components/Bio';
 import Footer from '../components/Footer';
 import Layout from '../components/Layout';
-import Panel from '../components/Panel';
 import React from 'react';
 import SEO from '../components/SEO';
 import get from 'lodash/get';
@@ -49,6 +48,15 @@ class BlogIndexTemplate extends React.Component {
                     {` • ${formatReadingTime(node.timeToRead)}`}
                   </small>
                 </header>
+                {node.frontmatter.cover && (
+                  <div className="cover">
+                    <div className="cover-wrapper">
+                      <img
+                        src={`${node.fields.slug}${node.frontmatter.cover}`}
+                      />
+                    </div>
+                  </div>
+                )}
                 <p
                   dangerouslySetInnerHTML={{ __html: node.frontmatter.spoiler }}
                 />
@@ -90,6 +98,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             spoiler
+            cover
           }
         }
       }

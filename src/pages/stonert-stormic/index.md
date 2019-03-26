@@ -1,7 +1,7 @@
 ---
 title: Stonert & Stormic
 date: 2014-06-07
-cover: ./cover.png
+cover: cover.png
 ---
 
 *[Stonert](https://github.com/houkanshan/stonert)* & *[Stormic](https://github.com/houkanshan/stormic)* are two music visualisation projects make by Processing.

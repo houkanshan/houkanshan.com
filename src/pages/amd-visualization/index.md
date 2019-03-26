@@ -1,6 +1,7 @@
 ---
 title: AMD Visualization
 date: 2013-08-25
+cover: cover.png
 ---
 
 [http://houkanshan.github.io/amd-visualization/](http://houkanshan.github.io/amd-visualization/)

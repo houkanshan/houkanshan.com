@@ -1,8 +1,12 @@
 
 Todo:
-  ☐ adapt posts
-  ☐ fix error
-  ☐ check image.
   ☐ add cover
   ☐ add new style.
   ☐ more posts
+  ☐ clean url
+  ☐ add comment
+
+Archive:
+  ✔ adapt posts @done(19-03-27 00:48) @project(Todo)
+  ✔ fix error @done(19-03-27 00:48) @project(Todo)
+  ✔ check image. @done(19-03-27 00:50) @project(Todo)

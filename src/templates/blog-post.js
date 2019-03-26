@@ -16,8 +16,6 @@ import {
   loadFontsForCode,
 } from '../utils/i18n';
 
-const GITHUB_USERNAME = 'gaearon';
-const GITHUB_REPO_NAME = 'overreacted.io';
 const systemFont = `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif`;
@@ -87,10 +85,6 @@ class BlogPostTemplate extends React.Component {
     loadFontsForCode(lang);
     // TODO: this curried function is annoying
     const languageLink = createLanguageLink(slug, lang);
-    const enSlug = languageLink('en');
-    const discussUrl = `https://mobile.twitter.com/search?q=${encodeURIComponent(
-      `https://overreacted.io${enSlug}`
-    )}`;
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -126,13 +120,6 @@ class BlogPostTemplate extends React.Component {
               )}
             </header>
             <div dangerouslySetInnerHTML={{ __html: html }} />
-            <footer>
-              <p>
-                <a href={discussUrl} target="_blank" rel="noopener noreferrer">
-                  Discuss on Twitter
-                </a>
-              </p>
-            </footer>
           </article>
         </main>
         <aside>

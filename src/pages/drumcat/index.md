@@ -1,7 +1,7 @@
 ---
 title: Drumcat
 date: 2014-03-11
-cover: ./cover.png
+cover: cover.png
 ---
 
 [https://github.com/houkanshan/drumcat/](https://github.com/houkanshan/drumcat/)

@@ -2,7 +2,7 @@
 title: Mojikumi
 date: 2014-06-18
 spoiler: 'A implement of mojikumi (标点挤压) in a hack way through opentype kerning.'
-cover: ./cover.png
+cover: cover.png
 ---
 
 Mojikumi (标点挤压) 是一个利用 Kerning 实现汉字标点挤压的实验项目。目的是在 Web 浏览器中实现标点挤压。目前部分实现了汉字的标点挤压。
@@ -10,7 +10,7 @@ Mojikumi (标点挤压) 是一个利用 Kerning 实现汉字标点挤压的实�
 [Github](https://github.com/houkanshan/mojikumi)
 [Test](https://houkanshan.github.com/mojikumi)
 
-![](/img/cover/2014-06-18-mojikumi.png)
+![](./cover.png)
 
 1. 浏览器不会尝试向 CSS 定义的 web font 中查找并使用 Bitmap 字体 (Tested on Chrome & Firefox, Windows)。
 2. CSS 的 `@font-face` 中，`src` 属性没有加 `local('xx')` 值的，会覆盖掉本地的字体，即：即使本地有同名的字体，也不会使用。
