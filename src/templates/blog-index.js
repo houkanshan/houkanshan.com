@@ -2,7 +2,6 @@ import { Link, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import { formatPostDate, formatReadingTime } from '../utils/helpers';
 
-import Bio from '../components/Bio';
 import Footer from '../components/Footer';
 import Layout from '../components/Layout';
 import React from 'react';
@@ -22,9 +21,6 @@ class BlogIndexTemplate extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO />
-        <aside>
-          <Bio />
-        </aside>
         <main>
           {posts.map(({ node }, i) => {
             const title = get(node, 'frontmatter.title') || node.fields.slug;
