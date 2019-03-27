@@ -178,7 +178,6 @@ exports.onCreateNode = ({ node, actions }) => {
       maybeAbsoluteLinks.push(match[1]);
       match = linkRe.exec(markdown);
     }
-    console.log(maybeAbsoluteLinks);
     createNodeField({
       node,
       name: 'maybeAbsoluteLinks',

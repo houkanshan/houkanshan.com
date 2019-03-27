@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'arkyakumono';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./files/arkyakumono.woff) format('woff'),
+    url(./files/arkyakumono.ttf) format('truetype'),
+    url(./files/arkyakumono.svg) format('svg');
+}

@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import Toggle from './Toggle';
 import Helmet from 'react-helmet';
 
-import { rhythm, scale } from '../utils/typography';
+import { rhythm, scale, sansSerifFont } from '../utils/typography';
 import sun from '../assets/sun.png';
 import moon from '../assets/moon.png';
 
@@ -46,7 +46,7 @@ class Layout extends React.Component {
       return (
         <h3
           style={{
-            fontFamily: 'Montserrat, sans-serif',
+            fontFamily: sansSerifFont,
             marginTop: 0,
             marginBottom: 0,
             height: 42, // because

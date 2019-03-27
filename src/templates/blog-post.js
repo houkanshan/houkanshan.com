@@ -2,23 +2,18 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import get from 'lodash/get';
 
-import '../fonts/fonts-post.css';
 // import Bio from '../components/Bio';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 // import Signup from '../components/Signup';
 import Panel from '../components/Panel';
 import { formatPostDate, formatReadingTime } from '../utils/helpers';
-import { rhythm, scale } from '../utils/typography';
+import { rhythm, scale, sansSerifFont } from '../utils/typography';
 import {
   codeToLanguage,
   createLanguageLink,
   loadFontsForCode,
 } from '../utils/i18n';
-
-const systemFont = `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif`;
 
 class Translations extends React.Component {
   render() {
@@ -28,7 +23,7 @@ class Translations extends React.Component {
 
     return (
       <div className="translations">
-        <Panel style={{ fontFamily: systemFont }}>
+        <Panel style={{ fontFamily: sansSerifFont }}>
           {translations.length > 0 && (
             <span>
               <span>In other language: </span>

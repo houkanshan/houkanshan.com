@@ -1,4 +1,5 @@
 import { Link, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import { formatPostDate, formatReadingTime } from '../utils/helpers';
 
 import Bio from '../components/Bio';
@@ -7,7 +8,9 @@ import Layout from '../components/Layout';
 import React from 'react';
 import SEO from '../components/SEO';
 import get from 'lodash/get';
-import { rhythm } from '../utils/typography';
+import { rhythm, sansSerifFont } from '../utils/typography';
+
+import './blog-index.css';
 
 class BlogIndexTemplate extends React.Component {
   render() {
@@ -23,16 +26,17 @@ class BlogIndexTemplate extends React.Component {
           <Bio />
         </aside>
         <main>
-          {posts.map(({ node }) => {
+          {posts.map(({ node }, i) => {
             const title = get(node, 'frontmatter.title') || node.fields.slug;
             return (
               <article key={node.fields.slug}>
                 <header>
                   <h3
                     style={{
-                      fontFamily: 'Montserrat, sans-serif',
+                      fontFamily: sansSerifFont,
                       fontSize: rhythm(1),
-                      marginBottom: rhythm(1 / 4),
+                      marginTop: rhythm(1.5),
+                      marginBottom: rhythm(0),
                     }}
                   >
                     <Link
@@ -49,10 +53,17 @@ class BlogIndexTemplate extends React.Component {
                   </small>
                 </header>
                 {node.frontmatter.cover && (
-                  <div className="cover">
+                  <div
+                    className={`cover ${
+                      node.frontmatter.isShortCover ? 'is-short-cover' : ''
+                    }`}
+                    style={{
+                      height: i === 0 ? 166 : 100,
+                    }}
+                  >
                     <div className="cover-wrapper">
-                      <img
-                        src={`${node.fields.slug}${node.frontmatter.cover}`}
+                      <Img
+                        fluid={node.frontmatter.cover.childImageSharp.fluid}
                       />
                     </div>
                   </div>
@@ -98,7 +109,14 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             spoiler
-            cover
+            cover {
+              childImageSharp {
+                fluid(maxWidth: 630) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            isShortCover
           }
         }
       }

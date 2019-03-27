@@ -1,7 +1,7 @@
 ---
 title: 'Devlog: Stop Eating'
 date: 2018-09-16
-cover: cover.png
+cover: "./cover.png"
 ---
 
 ## Summary

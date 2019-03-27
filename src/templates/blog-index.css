@@ -1,0 +1,18 @@
+.cover {
+  overflow: hidden;
+  position: relative;
+  font-size: 0;
+  margin-top: 0.4375rem;
+}
+.cover .cover-wrapper {
+  width: 100%;
+}
+.cover:not(.is-short-cover) .cover-wrapper {
+  transform: translate(0, -30%);
+}
+.cover.is-short-cover .cover-wrapper {
+  position: absolute;
+  left: -10%;
+  right: -10%;
+  width: auto;
+}

@@ -1,10 +1,23 @@
-import '../fonts/fonts-shared.css';
+import '../fonts/font-lora.css';
+import '../fonts/font-arkyakumono.css';
 import './global.css';
 
 import Typography from 'typography';
 import Wordpress2016 from 'typography-theme-wordpress-2016';
 
+export const sansSerifFont = `'arkyakumono','Avenir Next',
+  "Helvetica Neue",Helvetica,
+  "Lucida Grande","Luxi Sans", sans-serif`;
+export const italicFont = `'LoraItalic',
+  "Georgia Italic","Georgia-Italic",
+  STKaiti,"AR PL UKai",
+  "AR PL KaitiM GB",KaiTi,KaiTi_GB2312,"TW-Kai"`;
+
 Wordpress2016.overrideThemeStyles = () => ({
+  'html, body': {
+    fontFamily: sansSerifFont,
+    fontSize: '18px',
+  },
   a: {
     color: 'var(--textLink)',
   },
@@ -24,12 +37,19 @@ Wordpress2016.overrideThemeStyles = () => ({
   'p code': {
     fontSize: '1rem',
   },
+  'h1, h2, h3, h4, h5, h6': {
+    fontWeight: 400,
+    fontFamily: sansSerifFont,
+  },
   // TODO: why tho
   'h1 code, h2 code, h3 code, h4 code, h5 code, h6 code': {
     fontSize: 'inherit',
   },
   'li code': {
     fontSize: '1rem',
+  },
+  'i, em': {
+    fontFamily: italicFont,
   },
   blockquote: {
     color: 'inherit',
