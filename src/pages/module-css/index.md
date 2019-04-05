@@ -30,7 +30,7 @@ less可以一定程度上避免代码的堆砌，因为它可以样式规则的�
 模块从全局空间开始，按照html树的层级，下面可能就到aside,main这级，然后再细化到内部的模块。到不能再细分模块的时候就以传统的css写法写。
 这种模块+类在html结构上应该象是这样：
 
-![css module](https://docs.google.com/drawings/pub?id=1rg7vzagk78_arYcCxHUtzPCPwOOAiFJBiz7Wc_cM1XQ&w=457&h=263)
+![CSS Module](https://docs.google.com/drawings/pub?id=1rg7vzagk78_arYcCxHUtzPCPwOOAiFJBiz7Wc_cM1XQ&w=457&h=263 'CSS Module')
 
 #### 横向上是
 

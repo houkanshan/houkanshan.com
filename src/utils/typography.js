@@ -59,6 +59,13 @@ Wordpress2016.overrideThemeStyles = () => ({
   'blockquote.translation': {
     fontSize: '1em',
   },
+  '.gatsby-resp-image-figcaption': {
+    textAlign: 'center',
+    fontSize: '14px',
+    marginTop: '5px',
+    lineHeight: '1.2',
+    fontFamily: italicFont,
+  },
 });
 
 delete Wordpress2016.googleFonts;

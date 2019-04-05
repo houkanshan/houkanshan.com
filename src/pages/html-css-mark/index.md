@@ -480,7 +480,7 @@ auto 元素的这个属性会保持static状态的值(优先级更低，比如le
 
 left + margin-left + border-left-width + padding-left + width + padding-right + border-right-width + margin-right + right = ContainingBlockWidth
 
-![width](https://docs.google.com/drawings/pub?id=13E7NLY3v93cEOLr3JSYdMz-4KmtdXYYfK3CSQQ4y-rE&w=1440&h=700)
+![width](https://docs.google.com/drawings/pub?id=13E7NLY3v93cEOLr3JSYdMz-4KmtdXYYfK3CSQQ4y-rE&w=1440&h=700 'Width')
 
 --
 

@@ -16,7 +16,7 @@ git可以很方便的在本地push/pull而不需要daemon进程，直接git init
 
 在NTFS上为了同步再加个repository，init为bare。在本地先push到这里，在有必要的时候再push到github上。
 
-![示意图](/img/git-repo.png)
+![示意图](/img/git-repo.png '示意图')
 
 虽然有时候需要push两次，但是我觉得对于我这种情况，这的确是必要的步骤。
 

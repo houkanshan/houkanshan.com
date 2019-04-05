@@ -27,7 +27,7 @@ In (or outside) the church, characters are located in the right bottom of the pi
 
 In *Act II, Scene V*’s museum, the overshoot and the beams in the foreground create a monitor’s viewpoint again, hinting the place is strange and something will happen. It challenged the role of the audiences in the museum as reviewers by letting the player playing as a monitor. Now these audiences become the monitor’s observation objects. The overshoot, glitch text, spotlight and the frame shaped by beams are all for it. But furthermore, in a meta level, the game, its wired dialogues and unusual controlling, is an exhibit to the player. So the player is their exhibit’s exhibit’s exhibit — a loop. It’s another interpretation of “both Inside and outside”. It’s the best part of the game.
 
-![Inside but outside](inside-outside.jpg)
+![Inside but outside](inside-outside.jpg 'Inside but outside')
 
 The using of the camera in the elevator and the church are borrowed from cinema. But the experience in the museum is unique to games because it separated the player’s control and sense. The player’s foot is on the protagonists but their eyes, mouth, ears are the on the monitors. We are still playing the characters, but without scripted dialogues of them. We imagine the dialogues by the monitors talking. So the game shapes the story by both the designer and the player. It’s inspiring.
 
