@@ -1,5 +1,6 @@
 {
-  "version": 1,
+  "version": 2,
+  "name": "houkanshan.com",
   "routes": [
     {
       "src": "/static/(.*)",
@@ -19,6 +20,12 @@
   ],
   "alias": "houkanshan.com",
   "builds": [
-    { "use": "@now/static-build", "src": "package.json", "config": { "distDir": "public" } }
+    {
+      "use": "@now/static-build",
+      "src": "package.json",
+      "config": {
+        "distDir": "public"
+      }
+    }
   ]
 }
