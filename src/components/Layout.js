@@ -2,18 +2,8 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Helmet from 'react-helmet';
 
-import { rhythm, scale, sansSerifFont } from '../utils/typography';
-
-const nav = [
-  {
-    title: 'blog',
-    url: '/blog/',
-  },
-  {
-    title: 'about',
-    url: '/about',
-  },
-];
+import { rhythm, sansSerifFont } from '../utils/typography';
+import nav from '../constants/nav';
 
 class Layout extends React.Component {
   state = {

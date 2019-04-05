@@ -26,7 +26,7 @@ class IndexTemplate extends React.Component {
         <SEO />
         <main>
           <section id="games">
-            <h2>Games</h2>
+            <h2 style={{ marginTop: '2.625rem' }}>Games</h2>
             <Showcase posts={games} isDetailed />
           </section>
           <section id="shorts">
