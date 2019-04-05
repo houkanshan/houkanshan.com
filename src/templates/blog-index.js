@@ -86,7 +86,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       filter: {
-        fields: { langKey: { eq: $langKey }, slug: { regex: "/^/blog/" } }
+        fields: { langKey: { eq: $langKey }, slug: { regex: "/blog/" } }
         frontmatter: { isHidden: { ne: true } }
       }
       sort: { fields: [frontmatter___date], order: DESC }

@@ -1,7 +1,7 @@
 import React from 'react';
 import get from 'lodash/get';
 import Layout from '../components/Layout';
-import Footer from '../components/Footer';
+import { graphql } from 'gatsby';
 
 class AboutPage extends React.Component {
   render() {

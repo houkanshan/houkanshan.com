@@ -1,6 +1,7 @@
 import React from 'react';
 import get from 'lodash/get';
 import Layout from '../components/Layout';
+import { graphql } from 'gatsby';
 
 class NotFoundPage extends React.Component {
   render() {

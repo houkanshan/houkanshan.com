@@ -109,8 +109,11 @@ module.exports = {
               {
                 allMarkdownRemark(
                   limit: 1000,
-                  sort: { order: DESC, fields: [frontmatter___date] }
-                  filter: {fields: { langKey: {eq: "en"}, frontmatter: { isHidden: {ne: true} }}}
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                  filter: {
+                    fields: { langKey: {eq: "en"} },
+                    frontmatter: { isHidden: {ne: true} }
+                  }
                 ) {
                   edges {
                     node {

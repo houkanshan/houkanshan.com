@@ -1,20 +1,16 @@
 const _ = require('lodash');
 const Promise = require('bluebird');
 const path = require('path');
-const { supportedLanguages } = require('./i18n');
+// const { supportedLanguages } = require('./i18n');
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
   return new Promise((resolve, reject) => {
-    // Create index page
-    createPage({
-      path: '/',
-      component: path.resolve('./src/templates/index.js'),
-    });
-
-    // Create blog pages for all supported languages
-    Object.keys(supportedLanguages).forEach(langKey => {
+    // ~~Create blog pages for all supported languages~~
+    // Object.keys(supportedLanguages).forEach(langKey => {
+    // Create blog page for en.
+    ['en'].forEach(langKey => {
       createPage({
         path: langKey === 'en' ? '/blog/' : `/blog/${langKey}/`,
         component: path.resolve('./src/templates/blog-index.js'),

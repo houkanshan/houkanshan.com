@@ -53,7 +53,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       filter: {
-        fields: { slug: { regex: "/^/(games|shorts)/" } }
+        fields: { slug: { regex: "/(games|shorts)/" } }
         frontmatter: { isHidden: { ne: true } }
       }
       sort: { fields: [frontmatter___date], order: DESC }
