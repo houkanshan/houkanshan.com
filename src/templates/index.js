@@ -1,7 +1,6 @@
-import { Link, graphql } from 'gatsby';
-import Img from 'gatsby-image';
-import { formatPostDate } from '../utils/helpers';
+import { graphql } from 'gatsby';
 
+import { rhythm } from '../utils/typography';
 import Footer from '../components/Footer';
 import Layout from '../components/Layout';
 import React from 'react';
@@ -26,11 +25,13 @@ class IndexTemplate extends React.Component {
         <SEO />
         <main>
           <section id="games">
-            <h2 style={{ marginTop: '2.625rem' }}>Games</h2>
+            <h2 style={{ marginTop: rhythm(1), marginBottom: rhythm(0.5) }}>
+              Games
+            </h2>
             <Showcase posts={games} isDetailed />
           </section>
           <section id="shorts">
-            <h2>Short Things</h2>
+            <h2 style={{ marginBottom: rhythm(0.5) }}>Short Things</h2>
             <Showcase posts={shorts} />
           </section>
         </main>

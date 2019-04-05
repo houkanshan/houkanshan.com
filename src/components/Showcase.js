@@ -14,7 +14,16 @@ function Showcase({ posts, isDetailed = false }) {
       {posts.map(({ node }, i) => (
         <article className="works-item" key={i}>
           <div className="works-hd">
-            <div className={`cover`} style={{ width: 224, height: 140 }}>
+            <div
+              className={`cover`}
+              style={{
+                width: 224,
+                height: 140,
+                borderRadius: 2,
+                overflow: 'hidden',
+                boxShadow: '0 0 0 0.5px #ddd',
+              }}
+            >
               <a href={node.frontmatter.url} className="" target="_blank">
                 {node.frontmatter.cover && (
                   <Img

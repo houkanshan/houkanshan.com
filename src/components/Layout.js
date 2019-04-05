@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import Helmet from 'react-helmet';
 
 import { rhythm, sansSerifFont } from '../utils/typography';
-import nav from '../constants/nav';
+import Nav from './Nav';
 
 class Layout extends React.Component {
   state = {
@@ -21,9 +21,10 @@ class Layout extends React.Component {
       <h1
         style={{
           fontFamily: sansSerifFont,
-          fontSize: 24,
+          fontSize: 18,
           marginTop: 0,
           marginBottom: 0,
+          marginRight: rhythm(0.5),
           height: 42, // because
           lineHeight: '2.625rem',
         }}
@@ -32,6 +33,10 @@ class Layout extends React.Component {
           style={{
             boxShadow: 'none',
             textDecoration: 'none',
+            color: 'var(--grayColor)',
+          }}
+          activeStyle={{
+            color: 'var(--titleColor)',
           }}
           to={'/'}
         >
@@ -65,7 +70,7 @@ class Layout extends React.Component {
             marginLeft: 'auto',
             marginRight: 'auto',
             maxWidth: rhythm(24),
-            padding: `2rem ${rhythm(3 / 4)}`,
+            padding: `1rem ${rhythm(3 / 4)}`,
           }}
         >
           <header
@@ -73,22 +78,12 @@ class Layout extends React.Component {
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',
-              marginBottom: '2.625rem',
+              marginBottom: rhythm(1),
             }}
           >
             <div style={{ display: 'flex', alignItems: 'baseline' }}>
               {this.renderHeader()}
-              <nav>
-                {nav.map(({ title, url }) => (
-                  <a
-                    key={url}
-                    href={url}
-                    style={{ marginLeft: rhythm(0.5), fontSize: 14 }}
-                  >
-                    {title}
-                  </a>
-                ))}
-              </nav>
+              <Nav />
             </div>
             <div style={{ height: '24px ' }}>
               {this.state.theme && (

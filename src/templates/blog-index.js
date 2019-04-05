@@ -29,7 +29,7 @@ class BlogIndexTemplate extends React.Component {
                     style={{
                       fontFamily: sansSerifFont,
                       fontSize: rhythm(1),
-                      marginTop: rhythm(1.5),
+                      marginTop: rhythm(1),
                       marginBottom: rhythm(0),
                     }}
                   >

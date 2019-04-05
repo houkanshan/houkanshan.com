@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'hou mai',
+    title: 'Hou Mai',
     author: 'HOU Mai',
     description: 'Personal website of HOU Mai.',
     siteUrl: 'https://houkanshan.com',

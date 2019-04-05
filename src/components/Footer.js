@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { rhythm } from '../utils/typography';
-import nav from '../constants/nav';
+import Nav from './Nav';
 
 class Footer extends React.Component {
   render() {
@@ -18,13 +18,7 @@ class Footer extends React.Component {
             rss
           </a>
         </div>
-        <nav>
-          {nav.map(({ title, url }) => (
-            <a key={url} href={url} style={{ marginRight: rhythm(0.5) }}>
-              {title}
-            </a>
-          ))}
-        </nav>
+        <Nav />
       </footer>
     );
   }
