@@ -7,12 +7,16 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
   return new Promise((resolve, reject) => {
-    const blogPost = path.resolve('./src/templates/blog-post.js');
+    // Create index page
+    createPage({
+      path: '/',
+      component: path.resolve('./src/templates/index.js'),
+    });
 
-    // Create index pages for all supported languages
+    // Create blog pages for all supported languages
     Object.keys(supportedLanguages).forEach(langKey => {
       createPage({
-        path: langKey === 'en' ? '/' : `/${langKey}/`,
+        path: langKey === 'en' ? '/blog/' : `/blog/${langKey}/`,
         component: path.resolve('./src/templates/blog-index.js'),
         context: {
           langKey,
@@ -20,6 +24,8 @@ exports.createPages = ({ graphql, actions }) => {
       });
     });
 
+    // Create blog posts pages.
+    const blogPost = path.resolve('./src/templates/blog-post.js');
     resolve(
       graphql(
         `
@@ -53,7 +59,6 @@ exports.createPages = ({ graphql, actions }) => {
           return;
         }
 
-        // Create blog posts pages.
         const posts = result.data.allMarkdownRemark.edges;
         const allSlugs = _.reduce(
           posts,

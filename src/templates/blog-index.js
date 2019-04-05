@@ -9,8 +9,6 @@ import SEO from '../components/SEO';
 import get from 'lodash/get';
 import { rhythm, sansSerifFont } from '../utils/typography';
 
-import './blog-index.css';
-
 class BlogIndexTemplate extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title');
@@ -45,23 +43,22 @@ class BlogIndexTemplate extends React.Component {
                   </h3>
                   <small>
                     {formatPostDate(node.frontmatter.date, langKey)}
-                    {` • ${formatReadingTime(node.timeToRead)}`}
+                    {`  ${formatReadingTime(node.timeToRead)}`}
                   </small>
                 </header>
                 {node.frontmatter.cover && (
                   <div
-                    className={`cover ${
-                      node.frontmatter.isShortCover ? 'is-short-cover' : ''
-                    }`}
+                    className={`cover`}
                     style={{
-                      height: i === 0 ? 166 : 100,
+                      height: 100,
+                      marginTop: rhythm(0.25),
                     }}
                   >
-                    <div className="cover-wrapper">
-                      <Img
-                        fluid={node.frontmatter.cover.childImageSharp.fluid}
-                      />
-                    </div>
+                    <Img
+                      fixed={node.frontmatter.cover.childImageSharp.fixed}
+                      objectFit="cover"
+                      objectPosition="50% 50%"
+                    />
                   </div>
                 )}
                 <p
@@ -89,7 +86,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       filter: {
-        fields: { langKey: { eq: $langKey } }
+        fields: { langKey: { eq: $langKey }, slug: { regex: "/^/blog/" } }
         frontmatter: { isHidden: { ne: true } }
       }
       sort: { fields: [frontmatter___date], order: DESC }
@@ -107,12 +104,11 @@ export const pageQuery = graphql`
             spoiler
             cover {
               childImageSharp {
-                fluid(maxWidth: 630) {
-                  ...GatsbyImageSharpFluid
+                fixed(width: 630, height: 100, cropFocus: ENTROPY) {
+                  ...GatsbyImageSharpFixed
                 }
               }
             }
-            isShortCover
           }
         }
       }

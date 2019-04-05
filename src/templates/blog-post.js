@@ -90,7 +90,7 @@ class BlogPostTemplate extends React.Component {
           slug={post.fields.slug}
         />
         <main>
-          <article>
+          <article className="post-article">
             <header>
               <h1 style={{ color: 'var(--textTitle)' }}>
                 {post.frontmatter.title}
@@ -104,7 +104,7 @@ class BlogPostTemplate extends React.Component {
                 }}
               >
                 {formatPostDate(post.frontmatter.date, lang)}
-                {` • ${formatReadingTime(post.timeToRead)}`}
+                {`  ${formatReadingTime(post.timeToRead)}`}
               </p>
               {translations.length > 0 && (
                 <Translations
@@ -114,7 +114,10 @@ class BlogPostTemplate extends React.Component {
                 />
               )}
             </header>
-            <div dangerouslySetInnerHTML={{ __html: html }} />
+            <div
+              className="post-article-content"
+              dangerouslySetInnerHTML={{ __html: html }}
+            />
           </article>
         </main>
         <aside>
@@ -131,20 +134,26 @@ class BlogPostTemplate extends React.Component {
             >
               <li>
                 {previous && (
-                  <Link
-                    to={previous.fields.slug}
-                    rel="prev"
-                    style={{ marginRight: 20 }}
-                  >
-                    ← {previous.frontmatter.title}
-                  </Link>
+                  <span>
+                    ←{' '}
+                    <Link
+                      to={previous.fields.slug}
+                      rel="prev"
+                      style={{ marginRight: 20 }}
+                    >
+                      {previous.frontmatter.title}
+                    </Link>
+                  </span>
                 )}
               </li>
               <li>
                 {next && (
-                  <Link to={next.fields.slug} rel="next">
-                    {next.frontmatter.title} →
-                  </Link>
+                  <span>
+                    <Link to={next.fields.slug} rel="next">
+                      {next.frontmatter.title}
+                    </Link>{' '}
+                    →
+                  </span>
                 )}
               </li>
             </ul>

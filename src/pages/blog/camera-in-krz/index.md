@@ -2,7 +2,6 @@
 title: The Camera in Kentucky Route Zero
 date: 2018-11-13
 cover: "./audience.jpg"
-isShortCover: true
 ---
 
 I’m making a tiny visual story focusing on using the camera to tell the story. Among the games I’ve played, KRZ is excellent in using camera. Although it feels more like a stage show using a fixed camera and doing transition by lighting and stage’s transform, the benefit is that its few but notable camera using make it easy to analyze. In this article, I’ll analyze some of my favorite frames.

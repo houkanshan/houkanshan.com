@@ -11,15 +11,22 @@ export const sansSerifFont = `'arkyakumono','Avenir Next',
 export const italicFont = `'LoraItalic',
   "Georgia Italic","Georgia-Italic",
   STKaiti,"AR PL UKai",
-  "AR PL KaitiM GB",KaiTi,KaiTi_GB2312,"TW-Kai"`;
+  "AR PL KaitiM GB",KaiTi,KaiTi_GB2312,"TW-Kai", serif`;
 
 Wordpress2016.overrideThemeStyles = () => ({
-  'html, body': {
+  html: {
     fontFamily: sansSerifFont,
     fontSize: '18px',
   },
+  body: {
+    fontFamily: sansSerifFont,
+  },
   a: {
     color: 'var(--textLink)',
+    boxShadow: 'none',
+  },
+  'a[class]': {
+    textDecoration: 'none',
   },
   hr: {
     background: 'var(--hr)',
@@ -58,6 +65,11 @@ Wordpress2016.overrideThemeStyles = () => ({
   },
   'blockquote.translation': {
     fontSize: '1em',
+  },
+  '.post-article-content a': {
+    fontFamily: italicFont,
+    textDecoration: 'underline',
+    textDecorationSkipInk: 'auto',
   },
   '.gatsby-resp-image-figcaption': {
     textAlign: 'center',
