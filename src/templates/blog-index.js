@@ -41,9 +41,12 @@ class BlogIndexTemplate extends React.Component {
                       {title}
                     </Link>
                   </h3>
-                  <small>
+                  <small style={{ display: 'block' }}>
                     {formatPostDate(node.frontmatter.date, langKey)}
-                    {`  ${formatReadingTime(node.timeToRead)}`}
+                    {node.frontmatter.event
+                      ? ` - ${node.frontmatter.event}`
+                      : ''}
+                    {`\u2003 ${formatReadingTime(node.timeToRead)}`}
                   </small>
                 </header>
                 {node.frontmatter.cover && (
@@ -51,13 +54,15 @@ class BlogIndexTemplate extends React.Component {
                     className={`cover`}
                     style={{
                       height: 100,
-                      marginTop: rhythm(0.25),
                     }}
                   >
                     <Img
                       fixed={node.frontmatter.cover.childImageSharp.fixed}
                       objectFit="cover"
                       objectPosition="50% 50%"
+                      style={{
+                        width: '100%',
+                      }}
                     />
                   </div>
                 )}
@@ -102,6 +107,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             spoiler
+            event
             cover {
               childImageSharp {
                 fixed(width: 630, height: 100, cropFocus: ENTROPY) {

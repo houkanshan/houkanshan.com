@@ -70,6 +70,7 @@ export const pageQuery = graphql`
             url
             title
             spoiler
+            event
             cover {
               childImageSharp {
                 fixed(width: 224, height: 140, cropFocus: CENTER) {

@@ -16,9 +16,14 @@
       "src": "/(.*)",
       "dest": "/$1",
       "headers": { "cache-control": "public, max-age=0, must-revalidate" }
+    },
+    {
+      "src": "/works/",
+      "dest": "/",
+      "headers": { "cache-control": "public,max-age=31536000,immutable" }
     }
   ],
-  "alias": "houkanshan.com",
+  "alias": ["houkanshan.com", "www.houkanshan.com"],
   "builds": [
     {
       "use": "@now/static-build",

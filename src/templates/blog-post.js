@@ -104,7 +104,8 @@ class BlogPostTemplate extends React.Component {
                 }}
               >
                 {formatPostDate(post.frontmatter.date, lang)}
-                {`  ${formatReadingTime(post.timeToRead)}`}
+                {post.frontmatter.event ? ` - ${post.frontmatter.event}` : ''}
+                {`\u2003 ${formatReadingTime(post.timeToRead)}`}
               </p>
               {translations.length > 0 && (
                 <Translations
@@ -182,6 +183,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         spoiler
+        event
       }
       fields {
         slug

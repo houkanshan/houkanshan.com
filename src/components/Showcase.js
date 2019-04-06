@@ -21,7 +21,7 @@ function Showcase({ posts, isDetailed = false }) {
                 height: 140,
                 borderRadius: 2,
                 overflow: 'hidden',
-                boxShadow: '0 0 0 0.5px #ddd',
+                boxShadow: '0 0 0 0.5px var(--hr)',
               }}
             >
               <a href={node.frontmatter.url} className="" target="_blank">
@@ -29,6 +29,7 @@ function Showcase({ posts, isDetailed = false }) {
                   <Img
                     fixed={node.frontmatter.cover.childImageSharp.fixed}
                     style={{ display: 'block' }}
+                    fadeIn={false}
                   />
                 )}
               </a>
@@ -49,6 +50,7 @@ function Showcase({ posts, isDetailed = false }) {
             <div className="desc">{node.frontmatter.spoiler}</div>
             <div className="date">
               {formatPostDate(node.frontmatter.date, 'en')}
+              {node.frontmatter.event ? ` - ${node.frontmatter.event}` : ''}
             </div>
           </div>
         </article>

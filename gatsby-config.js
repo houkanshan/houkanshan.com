@@ -55,7 +55,13 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaultQuality: 75,
+        stripMetadata: true,
+      },
+    },
     `gatsby-plugin-stylus`,
     {
       resolve: `gatsby-plugin-google-analytics`,
