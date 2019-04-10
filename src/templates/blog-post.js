@@ -115,6 +115,13 @@ class BlogPostTemplate extends React.Component {
                 />
               )}
             </header>
+            <div className="extra-info">
+              {post.frontmatter.url && (
+                <p>
+                  <a href={post.frontmatter.url}>{post.frontmatter.url}</a>
+                </p>
+              )}
+            </div>
             <div
               className="post-article-content"
               dangerouslySetInnerHTML={{ __html: html }}
@@ -184,6 +191,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         spoiler
         event
+        url
       }
       fields {
         slug

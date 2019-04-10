@@ -66,7 +66,7 @@ Wordpress2016.overrideThemeStyles = () => ({
   'blockquote.translation': {
     fontSize: '1em',
   },
-  '.post-article-content a': {
+  '.post-article-content a, .extra-info a': {
     fontFamily: italicFont,
     textDecoration: 'underline',
     textDecorationSkipInk: 'auto',
