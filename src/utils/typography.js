@@ -17,6 +17,7 @@ Wordpress2016.overrideThemeStyles = () => ({
   html: {
     fontFamily: sansSerifFont,
     fontSize: '18px',
+    fontDisplay: 'swap',
   },
   body: {
     fontFamily: sansSerifFont,
