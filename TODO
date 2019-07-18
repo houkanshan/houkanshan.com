@@ -1,14 +1,16 @@
-
 Todo:
-  ✔ add cover @done(19-03-28 00:25)
-  ✔ add new style. @done(19-04-05 20:59)
-  ✔ figure caption @done(19-04-05 15:55)
-  ✔ more posts @done(19-04-05 20:59)
-  ✔ clean url @done(19-03-28 00:26)
-  ✘ add comment @cancelled(19-04-05 20:59)
-  ✔ add home page & works page @done(19-04-05 20:59)
+  ☐ move game's content to spoiler
+  ☐ the content should be a trailer.
+  ☐ mailing list
 
 Archive:
+  ✔ add cover @done(19-03-28 00:25) @project(Todo)
+  ✔ add new style. @done(19-04-05 20:59) @project(Todo)
+  ✔ figure caption @done(19-04-05 15:55) @project(Todo)
+  ✔ more posts @done(19-04-05 20:59) @project(Todo)
+  ✔ clean url @done(19-03-28 00:26) @project(Todo)
+  ✘ add comment @cancelled(19-04-05 20:59) @project(Todo)
+  ✔ add home page & works page @done(19-04-05 20:59) @project(Todo)
   ✔ adapt posts @done(19-03-27 00:48) @project(Todo)
   ✔ fix error @done(19-03-27 00:48) @project(Todo)
   ✔ check image. @done(19-03-27 00:50) @project(Todo)
