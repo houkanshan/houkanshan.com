@@ -17,6 +17,14 @@ class AboutPage extends React.Component {
         </article>
         <footer style={{ marginTop: '1rem' }}>
           <a
+            href="https://douban.com/people/houkanshan"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            豆瓣
+          </a>
+          {' - '}
+          <a
             href="https://mobile.twitter.com/houkanshan"
             target="_blank"
             rel="noopener noreferrer"
@@ -30,14 +38,6 @@ class AboutPage extends React.Component {
             rel="noopener noreferrer"
           >
             github
-          </a>
-          {' - '}
-          <a
-            href="https://douban.com/people/houkanshan"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            douban
           </a>
           {' - '}
           <a
