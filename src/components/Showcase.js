@@ -7,6 +7,10 @@ import './Showcase.styl';
 
 const coverWidth = 224;
 const coverHeight = 140;
+const coverSize = {
+  width: coverWidth,
+  height: coverHeight,
+};
 
 function Showcase({ posts, isDetailed = false }) {
   return (
@@ -17,20 +21,47 @@ function Showcase({ posts, isDetailed = false }) {
             <div
               className={`cover`}
               style={{
-                width: 224,
-                height: 140,
+                ...coverSize,
                 borderRadius: 2,
                 overflow: 'hidden',
                 boxShadow: '0 0 0 0.5px var(--hr)',
               }}
             >
-              <a href={node.frontmatter.url} className="" target="_blank">
-                {node.frontmatter.cover && (
+              <a
+                href={node.frontmatter.url}
+                className=""
+                target="_blank"
+                style={{
+                  display: 'block',
+                  ...coverSize,
+                }}
+              >
+                {node.frontmatter.cover.childImageSharp ? (
                   <Img
                     fixed={node.frontmatter.cover.childImageSharp.fixed}
                     style={{ display: 'block' }}
                     fadeIn={false}
                   />
+                ) : (
+                  <div
+                    style={{
+                      position: 'relative',
+                      ...coverSize,
+                    }}
+                  >
+                    <img
+                      src={node.frontmatter.cover.publicURL}
+                      style={{
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                        objectPosition: 'center center',
+                      }}
+                    />
+                  </div>
                 )}
               </a>
             </div>

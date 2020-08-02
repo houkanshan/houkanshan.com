@@ -109,6 +109,9 @@ export const pageQuery = graphql`
             spoiler
             event
             cover {
+              absolutePath
+              relativePath
+              publicURL
               childImageSharp {
                 fixed(width: 630, height: 100, cropFocus: ENTROPY) {
                   ...GatsbyImageSharpFixed

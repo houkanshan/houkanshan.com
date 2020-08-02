@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Hou Mai',
     author: 'HOU Mai',
-    description: "I'm HOU Mai.",
+    description: "HOU Mai's is a front end engineer and a indie game maker.",
     siteUrl: 'https://houkanshan.com',
     social: {
       twitter: '@houkanshan',
