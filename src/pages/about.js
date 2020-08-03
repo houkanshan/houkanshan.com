@@ -9,7 +9,8 @@ class AboutPage extends React.Component {
     return (
       <Layout title={siteTitle} location={this.props.location}>
         <article className="post-article-content">
-          Mai HOU is a front-end engineer and indie game maker, working at{' '}
+          Mai HOU is a front-end engineer and indie game maker, studying as a
+          Game Design MFA at NYU Game Center, previously working at{' '}
           <a href="https://read.douban.com" target="_blank">
             Douban Read
           </a>
