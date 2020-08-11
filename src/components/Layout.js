@@ -88,8 +88,6 @@ class Layout extends React.Component {
             <div style={{ height: '24px ' }}>
               {this.state.theme && (
                 <a
-                  href="javascript:;"
-                  className=""
                   style={{ fontSize: '12px' }}
                   onClick={() => {
                     window.__setPreferredTheme(

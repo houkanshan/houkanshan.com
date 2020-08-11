@@ -23,7 +23,8 @@ class IndexTemplate extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO />
-        <main>
+
+        <main className="page-index">
           <section id="games">
             <h2 style={{ marginTop: rhythm(1), marginBottom: rhythm(0.5) }}>
               Games

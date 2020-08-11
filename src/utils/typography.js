@@ -13,7 +13,7 @@ export const italicFont = `'LoraItalic',
   STKaiti,"AR PL UKai",
   "AR PL KaitiM GB",KaiTi,KaiTi_GB2312,"TW-Kai", serif`;
 
-Wordpress2016.overrideThemeStyles = () => ({
+Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => ({
   html: {
     fontFamily: sansSerifFont,
     fontSize: '18px',
@@ -78,6 +78,12 @@ Wordpress2016.overrideThemeStyles = () => ({
     marginTop: '5px',
     lineHeight: '1.2',
     fontFamily: italicFont,
+  },
+  '.page-index section > h2': {
+    fontSize: rhythm(0.6),
+  },
+  'a:not(href)': {
+    cursor: 'pointer',
   },
 });
 
