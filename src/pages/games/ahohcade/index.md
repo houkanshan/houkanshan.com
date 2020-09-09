@@ -1,7 +1,7 @@
 ---
 title: AhOhCade
 url: 'https://houkanshan.itch.io/ahohcade'
-spoiler: Programming, Design, Art - Action, Co-op, Puzzle Windows
+spoiler: Programming, Design, Art - Action, Co-op, Puzzle - Windows
 cover: './cover.gif'
 date: '2020-06-17'
 ---

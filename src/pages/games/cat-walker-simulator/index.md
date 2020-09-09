@@ -1,7 +1,7 @@
 ---
 title: Cat Walker Simulator
 url: 'https://houkanshan.itch.io/cat-walker-simulator'
-spoiler: Programming, Design, Art - Action, Co-op, Windows / macOS
+spoiler: Programming, Design, Art - Action, Co-op - Windows / macOS
 cover: './cover.png'
 date: '2019-12-14'
 ---
