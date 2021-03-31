@@ -6,7 +6,7 @@ import { rhythm, sansSerifFont } from '../utils/typography';
 import './Showcase.styl';
 
 const coverWidth = 224;
-const coverHeight = 140;
+const coverHeight = 160;
 const coverSize = {
   width: coverWidth,
   height: coverHeight,
@@ -72,12 +72,13 @@ function Showcase({ posts, isDetailed = false }) {
                 {node.frontmatter.title}
               </a>
             </div>
-            {isDetailed && (
+            {/* {(
               <div
                 className="content"
                 dangerouslySetInnerHTML={{ __html: node.html }}
               />
-            )}
+            )} */}
+            <div className="content">{node.frontmatter.description}</div>
             <div className="desc">{node.frontmatter.spoiler}</div>
             <div className="date">
               {formatPostDate(node.frontmatter.date, 'en')}

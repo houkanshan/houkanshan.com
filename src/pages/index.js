@@ -29,7 +29,7 @@ class IndexTemplate extends React.Component {
             <h2 style={{ marginTop: rhythm(1), marginBottom: rhythm(0.5) }}>
               Games
             </h2>
-            <Showcase posts={games} isDetailed />
+            <Showcase posts={games} />
           </section>
           <section id="shorts">
             <h2 style={{ marginBottom: rhythm(0.5) }}>Short Things</h2>
@@ -72,12 +72,13 @@ export const pageQuery = graphql`
             title
             spoiler
             event
+            description
             cover {
               absolutePath
               relativePath
               publicURL
               childImageSharp {
-                fixed(width: 224, height: 140, cropFocus: CENTER) {
+                fixed(width: 224, height: 160, cropFocus: CENTER) {
                   ...GatsbyImageSharpFixed
                 }
               }

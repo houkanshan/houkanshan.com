@@ -133,6 +133,7 @@ module.exports = {
                         date
                         spoiler
                         isHidden
+                        description
                       }
                     }
                   }

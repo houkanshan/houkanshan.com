@@ -4,6 +4,5 @@ url: 'https://houkanshan.itch.io/stop-eating'
 spoiler: Solo - Action, Puzzle - Windows / macOS
 cover: './cover.png'
 date: 2018-08-02
+description: Run, steal, attract, distract and don't be ate!
 ---
-
-Run, steal, attract, distract and don't be ate!

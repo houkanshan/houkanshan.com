@@ -108,6 +108,7 @@ export const pageQuery = graphql`
             title
             spoiler
             event
+            description
             cover {
               absolutePath
               relativePath

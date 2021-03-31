@@ -69,7 +69,7 @@ class Layout extends React.Component {
           style={{
             marginLeft: 'auto',
             marginRight: 'auto',
-            maxWidth: rhythm(24),
+            maxWidth: rhythm(31.66),
             padding: `1rem ${rhythm(3 / 4)}`,
           }}
         >
@@ -85,7 +85,7 @@ class Layout extends React.Component {
               {this.renderHeader()}
               <Nav />
             </div>
-            <div style={{ height: '24px ' }}>
+            <div style={{ height: '24px' }}>
               {this.state.theme && (
                 <a
                   style={{ fontSize: '12px' }}
