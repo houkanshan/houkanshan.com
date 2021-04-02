@@ -73,6 +73,12 @@ export const pageQuery = graphql`
             spoiler
             event
             description
+            mp4 {
+              publicURL
+            }
+            webm {
+              publicURL
+            }
             cover {
               absolutePath
               relativePath
