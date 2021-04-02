@@ -38,6 +38,10 @@ class AboutPage extends React.Component {
           <a href="https://houkanshan.itch.io/" target="_blank">
             itch.io
           </a>
+          {' - '}
+          <a href="https://resume.houkanshan.com/" target="_blank">
+            Resume
+          </a>
         </footer>
       </Layout>
     );
