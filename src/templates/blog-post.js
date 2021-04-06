@@ -116,7 +116,7 @@ class BlogPostTemplate extends React.Component {
               )}
             </header>
             <div className="extra-info">
-              {post.frontmatter.url && (
+              {post.frontmatter.url && post.frontmatter.url.startsWith('http') && (
                 <p>
                   <a href={post.frontmatter.url}>{post.frontmatter.url}</a>
                 </p>

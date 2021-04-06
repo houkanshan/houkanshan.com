@@ -37,6 +37,7 @@ function Showcase({ posts, isDetailed = false }) {
                   target="_blank"
                   style={{
                     display: 'block',
+                    position: 'relative',
                     ...coverSize,
                   }}
                 >
@@ -50,7 +51,6 @@ function Showcase({ posts, isDetailed = false }) {
                     <div
                       className="image-wrapper"
                       style={{
-                        position: 'relative',
                         ...coverSize,
                       }}
                     >

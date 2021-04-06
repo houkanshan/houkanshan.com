@@ -1,16 +1,25 @@
 import React, { useRef, useState } from 'react';
 
+const scale = 1.2;
+
 export default function Video({ size, mp4, webm }) {
   const videoRef = useRef(null);
   const videoContainerRef = useRef(null);
 
   const [pos, setPos] = useState({ x: 0, y: 0 });
 
-  const handleMouseEnter = () => {
+  const handleMouseMove = e => {
+    const domRect = videoContainerRef.current.getBoundingClientRect();
+    setPos({
+      x: -Math.round((e.clientX - domRect.left) * (scale - 1)),
+      y: -Math.round((e.clientY - domRect.top) * (scale - 1)),
+    });
+  };
+
+  const handleMouseEnter = e => {
     if (videoRef.current) {
-      // videoRef.current.style.top = -1000;
-      // videoRef.current.style.top = 0;
       videoRef.current.play();
+      handleMouseMove(e);
     }
   };
 
@@ -22,14 +31,6 @@ export default function Video({ size, mp4, webm }) {
         y: -1000,
       });
     }
-  };
-
-  const handleMouseMove = e => {
-    const domRect = videoContainerRef.current.getBoundingClientRect();
-    setPos({
-      x: -(e.clientX - domRect.left) * 0.2,
-      y: -(e.clientY - domRect.top) * 0.2,
-    });
   };
 
   return (
@@ -51,8 +52,8 @@ export default function Video({ size, mp4, webm }) {
           position: 'absolute',
           left: pos.x,
           top: pos.y,
-          width: '120%',
-          height: '120%',
+          width: `${scale * 100}%`,
+          height: `${scale * 100}%`,
           objectFit: 'cover',
           objectPosition: 'center center',
         }}
