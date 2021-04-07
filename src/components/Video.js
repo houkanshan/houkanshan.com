@@ -48,6 +48,7 @@ export default function Video({ size, mp4, webm }) {
       <video
         loop
         ref={videoRef}
+        muted
         style={{
           position: 'absolute',
           left: pos.x,
