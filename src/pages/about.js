@@ -1,6 +1,7 @@
 import React from 'react';
 import get from 'lodash/get';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 import { graphql } from 'gatsby';
 
 class AboutPage extends React.Component {
@@ -8,6 +9,7 @@ class AboutPage extends React.Component {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title');
     return (
       <Layout title={siteTitle} location={this.props.location}>
+        <SEO />
         <article className="post-article-content">
           Mai HOU is a front-end engineer and indie game maker, studying as a
           Game Design MFA candidate at{' '}
