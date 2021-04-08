@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'HOU Mai',
+    title: 'Mai Hou',
     author: 'Mai Hou',
     description:
       'I enjoy designing tools and craft experiences. As a web developer and game developer, I am skilled in web typography, web-based text editor, single-page application, and 3D rendering.',
@@ -142,7 +142,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: "HOU Mai's Blog RSS Feed",
+            title: "Mai Hou's Blog RSS Feed",
           },
         ],
       },
@@ -150,8 +150,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `HOU Mai`,
-        short_name: `Hou Mai`,
+        name: `Mai Hou`,
+        short_name: `Mai Hou`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#000000`,
