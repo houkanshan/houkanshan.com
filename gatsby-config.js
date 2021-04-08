@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Hou Mai',
-    author: 'HOU Mai',
-    description: "HOU Mai's is a front end engineer and a indie game maker.",
+    title: 'HOU Mai',
+    author: 'Mai Hou',
+    description:
+      'I enjoy designing tools and craft experiences. As a web developer and game developer, I am skilled in web typography, web-based text editor, single-page application, and 3D rendering.',
     siteUrl: 'https://houkanshan.com',
     social: {
       twitter: '@houkanshan',
