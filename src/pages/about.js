@@ -40,7 +40,7 @@ class AboutPage extends React.Component {
           </a>
           {' - '}
           <a href="https://resume.houkanshan.com/" target="_blank">
-            Resume
+            resume
           </a>
         </footer>
       </Layout>
