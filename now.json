@@ -2,6 +2,8 @@
   "version": 2,
   "name": "houkanshan.com",
   "routes": [
+    { "src": "/nainais-recipe", "dest": "https://houkanshan.itch.io/nainais-recipe"},
+    { "src": "/works/", "dest": "/" },
     {
       "src": "/static/(.*)",
       "dest": "/static/$1",
@@ -16,13 +18,7 @@
       "src": "/(.*)",
       "dest": "/$1",
       "headers": { "cache-control": "public, max-age=0, must-revalidate" }
-    },
-    {
-      "src": "/works/",
-      "dest": "/",
-      "headers": { "cache-control": "public,max-age=31536000,immutable" }
-    },
-    { "src": "/nainais-recipe", "dest": "https://houkanshan.itch.io/nainais-recipe"}
+    }
   ],
   "alias": ["houkanshan.com", "www.houkanshan.com"],
   "builds": [
