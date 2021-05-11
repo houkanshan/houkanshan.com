@@ -22,7 +22,7 @@
       "dest": "/",
       "headers": { "cache-control": "public,max-age=31536000,immutable" }
     },
-    { "src": "/nainais-recipe", "dest": "https://houkanshan.itch.io/nainais-recipe"},
+    { "src": "/nainais-recipe", "dest": "https://houkanshan.itch.io/nainais-recipe"}
   ],
   "alias": ["houkanshan.com", "www.houkanshan.com"],
   "builds": [
