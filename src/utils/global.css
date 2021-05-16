@@ -1,7 +1,7 @@
 body {
   --majorColor: #000;
   background-color: var(--bg);
-  --lightColor: #fff;
+  --lightColor: #fefefe;
   --darkColor: #282c35;
 }
 
