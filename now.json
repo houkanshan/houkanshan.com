@@ -3,6 +3,7 @@
   "name": "houkanshan.com",
   "routes": [
     { "src": "/nainais-recipe", "status": 302, "headers": { "Location": "https://houkanshan.itch.io/nainais-recipe" } },
+    { "src": "/nainai", "status": 302, "headers": { "Location": "https://houkanshan.itch.io/nainais-recipe" } },
     { "src": "/works/", "dest": "/" },
     {
       "src": "/static/(.*)",
