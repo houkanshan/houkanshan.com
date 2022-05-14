@@ -1,23 +1,20 @@
 import '../fonts/font-lora.css';
 import '../fonts/font-arkyakumono.css';
+import '../fonts/font-inter.css';
 import './global.css';
 
 import Typography from 'typography';
 import Wordpress2016 from 'typography-theme-wordpress-2016';
 
-export const sansSerifFont = `'arkyakumono','Avenir Next',
-  "Helvetica Neue",Helvetica,
-  "Lucida Grande","Luxi Sans", sans-serif`;
-export const italicFont = `'LoraItalic',
-  "Georgia Italic","Georgia-Italic",
-  STKaiti,"AR PL UKai",
-  "AR PL KaitiM GB",KaiTi,KaiTi_GB2312,"TW-Kai", serif`;
+export const sansSerifFont = `'arkyakumono','Inter var','Avenir Next',sans-serif`;
+export const italicFont = `'LoraItalic', "Georgia Italic","Georgia-Italic",cursive`;
 
 Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => ({
   html: {
     fontFamily: sansSerifFont,
     fontSize: '18px',
     fontDisplay: 'swap',
+    letterSpacing: '-0.01em',
   },
   body: {
     fontFamily: sansSerifFont,

@@ -26,9 +26,6 @@ class IndexTemplate extends React.Component {
 
         <main className="page-index">
           <section id="games">
-            <h2 style={{ marginTop: rhythm(1), marginBottom: rhythm(0.5) }}>
-              Games
-            </h2>
             <Showcase posts={games} />
           </section>
           <section id="shorts">

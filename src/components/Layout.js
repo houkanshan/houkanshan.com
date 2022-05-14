@@ -26,7 +26,7 @@ class Layout extends React.Component {
           marginBottom: 0,
           marginRight: rhythm(0.5),
           height: 42, // because
-          lineHeight: '2.625rem',
+          lineHeight: rhythm(2),
         }}
       >
         <Link
@@ -78,6 +78,7 @@ class Layout extends React.Component {
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',
+              height: rhythm(1),
               marginBottom: rhythm(1),
             }}
           >

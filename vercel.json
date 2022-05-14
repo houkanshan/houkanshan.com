@@ -2,8 +2,16 @@
   "version": 2,
   "name": "houkanshan.com",
   "routes": [
-    { "src": "/nainais-recipe", "status": 302, "headers": { "Location": "https://houkanshan.itch.io/nainais-recipe" } },
-    { "src": "/nainai", "status": 302, "headers": { "Location": "https://houkanshan.itch.io/nainais-recipe" } },
+    {
+      "src": "/nainais-recipe",
+      "status": 302,
+      "headers": { "Location": "https://houkanshan.itch.io/nainais-recipe" }
+    },
+    {
+      "src": "/nainai",
+      "status": 302,
+      "headers": { "Location": "https://houkanshan.itch.io/nainais-recipe" }
+    },
     { "src": "/works/", "dest": "/" },
     {
       "src": "/static/(.*)",
@@ -24,7 +32,7 @@
   "alias": ["houkanshan.com", "www.houkanshan.com"],
   "builds": [
     {
-      "use": "@now/static-build",
+      "use": "@vercel/static-build",
       "src": "package.json",
       "config": {
         "distDir": "public"
