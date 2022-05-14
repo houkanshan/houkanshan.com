@@ -11,14 +11,13 @@ class AboutPage extends React.Component {
       <Layout title={siteTitle} location={this.props.location}>
         <SEO />
         <article className="post-article-content">
-          Mai HOU is a front-end engineer and indie game maker, studying as a
-          Game Design MFA candidate at{' '}
-          <a href="https://gamecenter.nyu.edu/">NYU Game Center</a>, previously
-          working at{' '}
+          Hi, I’m a front-end engineer and indie game maker, previously working
+          at{' '}
           <a href="https://read.douban.com" target="_blank">
             Douban Read
           </a>
-          .
+          . Recently, I got an MFA in Game Design at{' '}
+          <a href="https://gamecenter.nyu.edu/">NYU Game Center</a>.
         </article>
         <footer style={{ marginTop: '1rem' }}>
           <a href="https://douban.com/people/houkanshan" target="_blank">

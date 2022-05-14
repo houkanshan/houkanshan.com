@@ -18,7 +18,9 @@ class Footer extends React.Component {
             rss
           </a>
         </div>
-        <Nav />
+        <div style={{ display: 'flex', gap: '0.5rem' }}>
+          :) <Nav />
+        </div>
       </footer>
     );
   }

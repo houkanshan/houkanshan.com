@@ -54,6 +54,8 @@ class BlogIndexTemplate extends React.Component {
                     className={`cover`}
                     style={{
                       height: 100,
+                      maxWidth: 400,
+                      margin: '0.5rem 0',
                     }}
                   >
                     <Img

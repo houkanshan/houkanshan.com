@@ -29,7 +29,7 @@ class IndexTemplate extends React.Component {
             <Showcase posts={games} />
           </section>
           <section id="shorts">
-            <h2 style={{ marginBottom: rhythm(0.5) }}>Short Things</h2>
+            <h2 style={{ marginBottom: rhythm(1) }}>Short Things</h2>
             <Showcase posts={shorts} />
           </section>
         </main>
