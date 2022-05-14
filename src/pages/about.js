@@ -11,8 +11,8 @@ class AboutPage extends React.Component {
       <Layout title={siteTitle} location={this.props.location}>
         <SEO />
         <article className="post-article-content">
-          Hi, I’m a front-end engineer and indie game maker, previously working
-          at{' '}
+          Hi, I like making games and tools (so I can fill the homepage you just
+          saw). I previously worked at{' '}
           <a href="https://read.douban.com" target="_blank">
             Douban Read
           </a>
