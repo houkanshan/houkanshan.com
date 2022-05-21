@@ -58,8 +58,12 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => ({
   },
   blockquote: {
     color: 'inherit',
-    borderLeftColor: 'inherit',
     opacity: '0.8',
+    fontFamily: italicFont,
+    marginLeft: 0,
+    paddingLeft: rhythm(0.6),
+    borderLeft: '4px solid #888',
+    fontSize: '1em',
   },
   'blockquote.translation': {
     fontSize: '1em',

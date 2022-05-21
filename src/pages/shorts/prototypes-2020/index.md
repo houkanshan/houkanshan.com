@@ -8,7 +8,7 @@ mp4: './cover.mp4'
 webm: './cover.webm'
 ---
 
-> Selected game prototypes I made for Prototype Studio and Action Game Studio during Spring 2020.
+> Selected game prototypes I made for [Prototype Studio](http://www.foddy.net/2018/02/hidden-homework/) and Action Game Studio during Spring 2020.
 
 ## Thanks Earth
 
