@@ -10,7 +10,7 @@ body.light {
   --header: var(--majorColor);
   --textNormal: #222;
   --textTitle: #222;
-  --textLink: var(--majorColor);
+  --textLink: var(--grayColor);
   --hr: #ddd;
   --inlineCode-bg: #f5f5f5;
   --inlineCode-text: #1a1a1a;

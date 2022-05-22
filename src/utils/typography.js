@@ -23,6 +23,10 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => ({
     color: 'var(--textLink)',
     boxShadow: 'none',
   },
+  'a:focus': {
+    // outline: 'none',
+    color: 'var(--textNormal)',
+  },
   'a[class]': {
     textDecoration: 'none',
   },
@@ -68,10 +72,11 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => ({
   'blockquote.translation': {
     fontSize: '1em',
   },
+  '.post-article': {
+    maxWidth: '42em',
+  },
   '.post-article-content a, .extra-info a': {
     fontFamily: italicFont,
-    textDecoration: 'underline',
-    textDecorationSkipInk: 'auto',
   },
   '.gatsby-resp-image-figcaption': {
     textAlign: 'center',

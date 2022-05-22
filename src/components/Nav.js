@@ -13,7 +13,6 @@ export default function Nav() {
           style={{
             marginRight: rhythm(0.5),
             fontSize: 14,
-            color: 'var(--grayColor)',
           }}
           activeStyle={{
             color: 'var(--textNormal)',

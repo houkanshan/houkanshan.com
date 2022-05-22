@@ -19,6 +19,5 @@ Open your microphone ~
 
 <iframe class="github-iframe" height="600px"
   style="width:100%;border:none;"
-  src="//houkanshan.com/drumcat/">
-fuck the jekyll template, hehe...
+  src="//houkanshan.github.io/drumcat/">
 </iframe>
