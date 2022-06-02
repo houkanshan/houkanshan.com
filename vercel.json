@@ -8,6 +8,11 @@
       "permanent": true
     },
     {
+      "source": "/nainai",
+      "destination": "https://houkanshan.itch.io/nainais-recipe",
+      "permanent": true
+    },
+    {
       "source": "/works",
       "destination": "/",
       "permanent": true

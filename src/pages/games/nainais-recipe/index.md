@@ -1,6 +1,6 @@
 ---
 title: Nainai’s Recipe
-url: 'https://maih.in/nainai'
+url: 'https://nainaisrecipe.com'
 spoiler: Simulation - Windows / macOS
 cover: './cover.png'
 date: '2021-05-20'
