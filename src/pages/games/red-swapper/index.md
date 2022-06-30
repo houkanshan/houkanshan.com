@@ -1,5 +1,5 @@
 ---
-title: Red Swapper 红换
+title: Red Swapper 紅換
 url: 'https://houkanshan.itch.io/red-swapper'
 spoiler: Solo - Action, Puzzle - Windows / macOS
 cover: './cover.png'
