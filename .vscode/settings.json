@@ -13,5 +13,6 @@
     "stonert",
     "stormic",
     "wordpress"
-  ]
+  ],
+  "workbench.colorTheme": "Gruvbox Material Light"
 }
